@@ -1,0 +1,22 @@
+<ion-content [fullscreen]="true">
+  <h1>Bienvenue sur Shopping List Stock</h1>
+  <img src="../assets/images/logotest.png">
+  <hr>
+
+  <h4>Partagez plus ! Oubliez moins !</h4>
+  <hr>
+
+  <ion-button (click)="displayConnection()" [disabled]="isConnectionSelected" >Connexion</ion-button>
+  <ion-button (click)="displayInscription()" [disabled]="!isConnectionSelected" >Inscription</ion-button>
+  <hr>
+
+  <div class="connexion" *ngIf="isConnectionSelected; else inscription">
+    <app-login></app-login>
+  </div>
+
+  <ng-template #inscription>
+    <div class="inscription" #inscription>
+      <app-inscription></app-inscription>
+    </div>
+  </ng-template>
+</ion-content>

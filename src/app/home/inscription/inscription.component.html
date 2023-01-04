@@ -1,0 +1,15 @@
+<h3>Inscription</h3>
+<form [formGroup]="fg" (ngSubmit)="submitForm()">
+  <p>
+    Nom: <input type="text" formControlName="name" >
+  </p>
+  <p>
+    Email: <input type="text" formControlName="email" >
+  </p>
+  <p>
+    Mot de passe: <input type="password" formControlName="password" >
+  </p>
+  <ion-button type="submit" [disabled]="fg.invalid" routerLink="/main">Découvrir</ion-button>
+</form>
+
+

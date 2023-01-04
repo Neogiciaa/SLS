@@ -1,0 +1,23 @@
+<ion-header *ngIf="currentUserList[0]" >
+  <ion-toolbar>
+    <ion-title>Maison de {{currentUserList[0].name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h3>Gérez vos résidences ci-dessous</h3>
+  <hr>
+  <hr>
+  <p>
+    Maison 1 :
+  </p>
+  <hr>
+  <p>
+    Maison 2 :
+  </p>
+
+  <div class="houseButtons">
+    <ion-button> + </ion-button>
+    <ion-button> - </ion-button>
+  </div>
+</ion-content>

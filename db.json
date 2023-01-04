@@ -1,0 +1,54 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "Neo",
+      "email": "neo@admintest.be",
+      "password": "admin1234",
+      "role": [
+        "admin"
+      ],
+
+      "family": [
+        {
+          "id": 1,
+          "name": "Maman"
+        },
+        {
+          "id": 2,
+          "name": "Papa"
+        }
+      ],
+
+      "house": [
+        {
+          "id": 1,
+          "name": "Ma maison"
+        },
+        {
+          "id": 2,
+          "name": "Maison de maman"
+        }
+      ],
+
+      "cart": [
+        {
+          "products": [
+            {
+              "id": 1,
+              "category": [
+                true
+              ],
+              "name": "Saucisson sec",
+              "description": "Le saucisson c'est la vie !",
+              "quantity": 4,
+              "message": "A prendre par paquets de 20 en stick !",
+              "dateDePeremption": "12/12/2024",
+              "image": "assets/images/products/saucisson.png"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
